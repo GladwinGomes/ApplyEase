@@ -1,0 +1,51 @@
+name,category
+Python,language
+JavaScript,language
+TypeScript,language
+Java,language
+C++,language
+C#,language
+Go,language
+Rust,language
+SQL,language
+HTML5,language
+CSS3,language
+Bash,language
+Django,framework
+Django REST Framework,framework
+Flask,framework
+FastAPI,framework
+React,framework
+Next.js,framework
+Vue.js,framework
+Angular,framework
+Node.js,framework
+Express.js,framework
+Spring Boot,framework
+Bootstrap,framework
+Tailwind CSS,framework
+PostgreSQL,database
+MySQL,database
+SQLite,database
+MongoDB,database
+Redis,database
+Snowflake,database
+BigQuery,database
+Docker,tool
+Kubernetes,tool
+Git,tool
+GitHub Actions,tool
+Terraform,tool
+AWS,cloud
+Google Cloud,cloud
+Azure,cloud
+Linux,tool
+Celery,tool
+PyTorch,ml
+TensorFlow,ml
+scikit-learn,ml
+pandas,ml
+NumPy,ml
+spaCy,ml
+pytest,tool
+Playwright,tool

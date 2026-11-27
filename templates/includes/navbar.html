@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="{% url 'landing' %}">
+      <i class="bi bi-briefcase-fill me-2"></i>ApplyEase
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#mainNav" aria-controls="mainNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      {% if user.is_authenticated %}
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'dashboard:dashboard' %}">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'jobs:job-list' %}">Jobs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'tracker:kanban-board' %}">Tracker</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'ai_tools:match-score' %}">AI Tools</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'profiles:profile' %}">Profile</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <span class="nav-link text-light">{{ user.email }}</span>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'accounts:logout' %}">
+            <i class="bi bi-box-arrow-right me-1"></i>Logout
+          </a>
+        </li>
+      </ul>
+      {% else %}
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'accounts:login' %}">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-light btn-sm ms-2 mt-1" href="{% url 'accounts:signup' %}">Sign Up</a>
+        </li>
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+</nav>

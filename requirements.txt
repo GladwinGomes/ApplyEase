@@ -1,0 +1,15 @@
+Django>=5.0,<7.0
+djangorestframework>=3.15
+django-cors-headers>=4.0
+mysqlclient>=2.2
+python-dotenv>=1.0
+spacy>=3.7
+scikit-learn>=1.4
+pdfplumber>=0.11
+PyPDF2>=3.0
+google-genai
+django-filter>=24.0
+django-ratelimit>=4.1
+Pillow>=10.0
+gunicorn>=22.0
+whitenoise>=6.6

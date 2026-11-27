@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}Mock Application Form 2 — ApplyEase{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card shadow-sm">
+        <div class="card-header bg-success text-white">
+          <h4 class="mb-0">Backend Developer Portal (ATS Style)</h4>
+        </div>
+        <div class="card-body p-4">
+          <form id="mockForm2" method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+              <label for="full_name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="full_name" name="full_name" placeholder="Enter your full name" required>
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="candidate_email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="candidate_email" name="candidate_email" placeholder="you@domain.com" required>
+              </div>
+              <div class="col-md-6">
+                <label for="mobile" class="form-label">Mobile / Telephone</label>
+                <input type="tel" class="form-control" id="mobile" name="mobile" placeholder="Phone number">
+              </div>
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="city_location" class="form-label">Current Location</label>
+                <input type="text" class="form-control" id="city_location" name="location" placeholder="San Francisco, CA">
+              </div>
+              <div class="col-md-6">
+                <label for="github_url" class="form-label">GitHub URL</label>
+                <input type="url" class="form-control" id="github_url" name="github" placeholder="https://github.com/username">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="portfolio_website" class="form-label">Portfolio / Website</label>
+              <input type="url" class="form-control" id="portfolio_website" name="portfolio" placeholder="https://yourportfolio.dev">
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="school_name" class="form-label">College / University</label>
+                <input type="text" class="form-control" id="school_name" name="school" placeholder="University name">
+              </div>
+              <div class="col-md-6">
+                <label for="major_field" class="form-label">Field of Study</label>
+                <input type="text" class="form-control" id="major_field" name="major" placeholder="Computer Engineering">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="summary_bio" class="form-label">Professional Summary</label>
+              <textarea class="form-control" id="summary_bio" name="summary" rows="4" placeholder="Tell us about your background..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-success px-4">Apply Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

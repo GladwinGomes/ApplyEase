@@ -1,0 +1,21 @@
+company_name,title,description,location,job_type,work_mode,apply_url
+TechNova Labs,Backend Python Engineer,"Build scalable REST APIs and microservices using Python, Django, PostgreSQL, and Docker.",San Francisco CA,full-time,hybrid,https://technovalabs.example.com/careers/101
+TechNova Labs,Cloud Infrastructure Engineer,"Manage Kubernetes clusters, Terraform IaC, and AWS CI/CD pipelines.",Seattle WA,full-time,remote,https://technovalabs.example.com/careers/102
+FinPulse Systems,Full Stack Developer,"Develop modern financial dashboards with React, TypeScript, Django REST Framework, and MySQL.",New York NY,full-time,hybrid,https://finpulse.example.com/jobs/201
+FinPulse Systems,Data Engineer,"Design ETL pipelines using Python, Apache Spark, Kafka, and Snowflake.",New York NY,full-time,on-site,https://finpulse.example.com/jobs/202
+HealthBridge AI,Machine Learning Engineer,"Train and deploy NLP and tabular healthcare models with PyTorch, scikit-learn, and FastAPI.",Boston MA,full-time,hybrid,https://healthbridge.example.com/apply/301
+HealthBridge AI,QA Automation Engineer,"Build end-to-end test suites using Playwright, Selenium, and pytest.",Remote,full-time,remote,https://healthbridge.example.com/apply/302
+QuantumGrid Data,Analytics Engineer,"Model warehouse tables in dbt, SQL, and BigQuery to power BI reporting.",Austin TX,full-time,remote,https://quantumgrid.example.com/careers/401
+QuantumGrid Data,Python Data Analyst Intern,"Assist data science team with pandas, NumPy, SQL queries, and visualization.",Austin TX,internship,hybrid,https://quantumgrid.example.com/careers/402
+GreenVolt Energy,Embedded Software Engineer,"Write firmware in C/C++ and Python telemetry tools for smart energy inverters.",Denver CO,full-time,on-site,https://greenvolt.example.com/jobs/501
+GreenVolt Energy,Frontend React Developer,"Build real-time grid monitoring UIs using React, Redux, and Bootstrap.",Denver CO,full-time,hybrid,https://greenvolt.example.com/jobs/502
+CyberShield Security,Application Security Engineer,"Perform code audits, SAST/DAST integration, and vulnerability remediation for web apps.",Washington DC,full-time,hybrid,https://cybershield.example.com/roles/601
+CyberShield Security,Security Operations Analyst,"Monitor SIEM alerts, automate incident response with Python, and harden Linux hosts.",Remote,full-time,remote,https://cybershield.example.com/roles/602
+RetailFlow Commerce,Django Backend Developer,"Maintain high-traffic e-commerce APIs, Celery task queues, and Redis caching.",Chicago IL,full-time,hybrid,https://retailflow.example.com/careers/701
+RetailFlow Commerce,UI/UX Frontend Engineer,"Craft responsive checkout flows with HTML5, CSS3, JavaScript, and Tailwind CSS.",Chicago IL,contract,remote,https://retailflow.example.com/careers/702
+AeroLink Robotics,Computer Vision Engineer,"Develop object detection and SLAM pipelines using OpenCV, PyTorch, and C++.",Pittsburgh PA,full-time,on-site,https://aerolink.example.com/jobs/801
+AeroLink Robotics,Robotics Software Intern,"Simulate autonomous navigation behaviors using ROS2, Python, and Linux.",Pittsburgh PA,internship,on-site,https://aerolink.example.com/jobs/802
+EduSpark Learning,Software Engineer - EdTech,"Build interactive student assessment tools with Django, PostgreSQL, and JavaScript.",Remote,full-time,remote,https://eduspark.example.com/careers/901
+EduSpark Learning,Part-Time Content & Curriculum Engineer,"Create coding exercises in Python, SQL, and Git for online learners.",Remote,part-time,remote,https://eduspark.example.com/careers/902
+Streamline DevTools,Developer Advocate,"Write technical guides, sample apps, and SDK demos in Python, Node.js, and Go.",San Francisco CA,full-time,remote,https://streamlinedev.example.com/jobs/1001
+Streamline DevTools,Platform Engineer,"Optimize GitHub Actions, Docker builds, and observability with Prometheus and Grafana.",Remote,full-time,remote,https://streamlinedev.example.com/jobs/1002

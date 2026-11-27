@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApplyEase Extension</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <h1>ApplyEase</h1>
+      <span id="authBadge" class="badge badge-muted">Signed Out</span>
+    </header>
+
+    <div id="statusMessage" class="status hidden" role="status"></div>
+
+    <section id="loginSection" class="section">
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+        <button type="submit" id="loginBtn" class="btn btn-primary btn-block">Sign In</button>
+      </form>
+    </section>
+
+    <section id="actionsSection" class="section hidden">
+      <p class="user-info">Signed in as <strong id="userEmail"></strong></p>
+
+      <div class="action-buttons">
+        <button id="fillBtn" class="btn btn-primary btn-block">Fill Form</button>
+        <button id="logBtn" class="btn btn-secondary btn-block">Log Application</button>
+      </div>
+
+      <hr class="divider">
+
+      <div class="form-group">
+        <label for="jobTitle">Job Title (optional for logging)</label>
+        <input type="text" id="jobTitle" placeholder="e.g. Software Engineer">
+      </div>
+      <div class="form-group">
+        <label for="companyName">Company Name (optional for logging)</label>
+        <input type="text" id="companyName" placeholder="e.g. Acme Corp">
+      </div>
+
+      <button id="logoutBtn" class="btn btn-link btn-block">Sign Out</button>
+    </section>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

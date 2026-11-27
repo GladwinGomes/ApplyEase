@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block title %}ApplyEase — Your AI-Powered Job Application Assistant{% endblock %}
+
+{% block content %}
+<section class="py-5 bg-light border-bottom">
+  <div class="container py-4 text-center">
+    <h1 class="display-4 fw-bold mb-3">Your AI-Powered Job Application Assistant</h1>
+    <p class="lead text-muted mb-4 mx-auto" style="max-width: 680px;">
+      Autofill repetitive job forms in one click, track every application on a visual Kanban board,
+      score your resume against job descriptions, and craft tailored cover letters with AI.
+    </p>
+    <div class="d-flex justify-content-center gap-3">
+      {% if user.is_authenticated %}
+      <a href="{% url 'tracker:kanban-board' %}" class="btn btn-primary btn-lg px-4">Go to Tracker</a>
+      <a href="{% url 'jobs:job-list' %}" class="btn btn-outline-primary btn-lg px-4">Browse Jobs</a>
+      {% else %}
+      <a href="{% url 'accounts:signup' %}" class="btn btn-primary btn-lg px-4">Get Started Free</a>
+      <a href="{% url 'accounts:login' %}" class="btn btn-outline-secondary btn-lg px-4">Login</a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 feature-card shadow-sm border-0">
+          <div class="card-body text-center p-4">
+            <div class="fs-1 text-primary mb-3"><i class="bi bi-magic"></i></div>
+            <h5 class="card-title fw-bold">Autofill</h5>
+            <p class="card-text text-muted">
+              Fill out tedious application forms instantly using our Chrome extension and your saved profile.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 feature-card shadow-sm border-0">
+          <div class="card-body text-center p-4">
+            <div class="fs-1 text-success mb-3"><i class="bi bi-kanban"></i></div>
+            <h5 class="card-title fw-bold">Track</h5>
+            <p class="card-text text-muted">
+              Organize your job search across Applied, Interview, Offer, and Rejected stages with reminders.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 feature-card shadow-sm border-0">
+          <div class="card-body text-center p-4">
+            <div class="fs-1 text-primary mb-3"><i class="bi bi-graph-up-arrow"></i></div>
+            <h5 class="card-title fw-bold">AI Match</h5>
+            <p class="card-text text-muted">
+              Analyze how well your resume matches any job posting and uncover missing keywords.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 feature-card shadow-sm border-0">
+          <div class="card-body text-center p-4">
+            <div class="fs-1 text-success mb-3"><i class="bi bi-file-earmark-text"></i></div>
+            <h5 class="card-title fw-bold">Cover Letter</h5>
+            <p class="card-text text-muted">
+              Generate personalized, role-specific cover letters in seconds powered by generative AI.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

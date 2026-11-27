@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}Mock Application Form 3 — ApplyEase{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card shadow-sm">
+        <div class="card-header bg-dark text-white">
+          <h4 class="mb-0">Quick Apply Form (Alternate Field Names)</h4>
+        </div>
+        <div class="card-body p-4">
+          <form id="mockForm3" method="post">
+            {% csrf_token %}
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="applicant_fname" class="form-label">Given Name</label>
+                <input type="text" class="form-control" id="applicant_fname" name="fname" aria-label="First Name">
+              </div>
+              <div class="col-md-6">
+                <label for="applicant_lname" class="form-label">Family Name</label>
+                <input type="text" class="form-control" id="applicant_lname" name="lname" aria-label="Last Name">
+              </div>
+              <div class="col-md-6">
+                <label for="contact_mail" class="form-label">Contact Email</label>
+                <input type="email" class="form-control" id="contact_mail" name="mail" placeholder="name@email.com">
+              </div>
+              <div class="col-md-6">
+                <label for="contact_tel" class="form-label">Contact Phone</label>
+                <input type="tel" class="form-control" id="contact_tel" name="tel" placeholder="(555) 000-0000">
+              </div>
+              <div class="col-md-6">
+                <label for="li_profile" class="form-label">LinkedIn</label>
+                <input type="text" class="form-control" id="li_profile" name="linkedin_url" placeholder="LinkedIn URL">
+              </div>
+              <div class="col-md-6">
+                <label for="gh_profile" class="form-label">GitHub</label>
+                <input type="text" class="form-control" id="gh_profile" name="github_url" placeholder="GitHub URL">
+              </div>
+              <div class="col-md-6">
+                <label for="alma_mater" class="form-label">Alma Mater</label>
+                <input type="text" class="form-control" id="alma_mater" name="institution" placeholder="School or University">
+              </div>
+              <div class="col-md-6">
+                <label for="qualification" class="form-label">Highest Qualification</label>
+                <input type="text" class="form-control" id="qualification" name="qualification" placeholder="e.g., B.Tech, M.S.">
+              </div>
+              <div class="col-12">
+                <label for="tech_stack" class="form-label">Technical Stack</label>
+                <input type="text" class="form-control" id="tech_stack" name="tech_skills" placeholder="Languages, frameworks, tools">
+              </div>
+              <div class="col-12">
+                <label for="motivation" class="form-label">Why do you want to join us?</label>
+                <textarea class="form-control" id="motivation" name="coverletter" rows="4" placeholder="Write a short note..."></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-dark px-4">Send Application</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
